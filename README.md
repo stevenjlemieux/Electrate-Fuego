@@ -13,7 +13,7 @@ See [My Demo](https://sjquigley.github.io/Steve-Electrate-Fuego/)
     
 ## Get started!
 
-1. Go to repository: [HERE](https://github.com/Open-Fuego/Electrate-Fuego)
+1. Go to repository: [HERE](https://github.com/Pitt-Fuego/Pitt-Fuego)
 
 2. Click the green "Code" button, and then click "Download ZIP" to your local computer. 
 
@@ -35,7 +35,7 @@ See [My Demo](https://sjquigley.github.io/Steve-Electrate-Fuego/)
 
 View the [Instructional Video](https://www.youtube.com/watch?v=drINeC4G40A) 
 
-Check out our other [Open Fuego Coding Tools](https://open-fuego.github.io/Open-Fuego-Coding-Tools/)
+Check out our other [Pitt Fuego Coding Tools](https://pitt-fuego.github.io/Pitt-Fuego-Coding-Tools/)
 
 
 ## Text Editor Optimization 
