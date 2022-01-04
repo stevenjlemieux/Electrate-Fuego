@@ -1,154 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+<!--Hello digital composer! Welcome to my Elevator Pitch Generator web design tool, powered by Stasis Theory. I'm glad you found it--we're going to adapt a 2,000 year old formula to help you pitch an idea, explaining who you are and what you want, why it's important, and what it will do for your audience. I use this document in my Technical Communications classes at the University of Pittsburgh to teach my students a little bit about rhetoric, and a little bit about computer science. Just follow along and with comments like this, and you will make a really cool web documemt that helps pitch your idea and learn a little bit about coding.
+
+You could make web presentations the easy way by creating a pdf's or powerpoint, or you could do a little more work to better understand these digital tools that you use everyday to (re)present yourself and connect with others in virtual spaces. And this last bit is an important point! If we really want to be makers, if we really want to be creative, then we need to understand our tools and how they work.
+
+In this file, you will work through the four questions of stasis: conjecture, definition, quality, and policy. This method is tried and true, 100% guaranteed to help you say something meaningful about almost anything. While the Greeks originally used it to help them explore questions and issues, and to try to figure out where others might disagree on those issues, the design can easily be adapted to other ends like this one. You should even commit this exercise of stasis to memory. That way, if you are ever stuck on an elevator with someone important...you'll be ready to have something to say. That was indeed the problem for Archimedes, the engineer who built the first elevator in 236BC and afterwards found himself riding in his elevator with all kinds of powerful people, ascending and descending with nothing to say. And for almost two hundred years, the the problem continued to plague the Greeks until the rhetorician Hermagoras solved this communication problem by developing the questions of stasis. Some say it was actually Aristotle, some hundred years pre-elevator, who first theorized the questions of stasis. And much later in the Roman period, Cicero, Quintillian, and Hermogenes added their own iterations.
+
+I like to think about stasis theory in terms of space. Some say the goal of this exercise is stasis, or agreement with the other, but I would argue that the goal of stasis is actually movement. Yes, when we come to stasis, we stop. But we stop only long enough in time/space to assess how we got where we are and what happened before moving forward. I argue that we actually use stasis theory to ready ourselves and others to move with changed velocity (in a new direction and perhaps at a different speed.)
+
+To get started with the Elevator Pitch Generator, you will need to fork my repository from GitHub if you haven't already. If you want to easily publish it on GitHub, I'll give you more information at the end of this document. But for right now, fork, and then download the website to a zip file. Go ahead and put these files in a secure place (folder) where you will be able to find them and organize your other assests like images and pdf's, etcetera. You will also need a text editor like "brackets.io" or "notepad-plus-plus.org." Open the style.css and index.html documents in the text editor and we can get started building our stasis theory web document.
+
+If you are working in groups on GitHub, one group member will need to fork the website in GitHub and then each group members should fork from this new repository.
+
+BTW. You can leave these faded comments be, or delete them. They are but road signs, absent from the larger design-->
+
+<!--Go ahead and change the title of this HTML document from "Elevator Pitch Generator" to whatever you want. This other stuff below the title does important work to help tell different browsers what this page should look like on different screens like cell phones or desktops-->
+
 <head>
-
-<!--Hello, maker! Welcome to my Electrate Fuego web design tutorial. I'm glad you found it – for this might be a real intersection on your way to becoming. Just follow along with comments like this one, and you'll make a really cool web documemt that not only introduces you to the other people in our classes, but will help you process how different discourse communities in your life have contributed to your arrival in this space, virtual and actual, and also contribute to where you might be going.
-
-In this doc, you will work through Gregory Ulmer's discourses of career, family, entertainment, community, and schooling (_Internet Invention From Literacy to Electracy_, 2002.) In Ulmer's text, he elides community and schooling into one category, but for our puposes I have separated them. Ulmer's theory of electracy helps makes sense of how we find/construct meaning and connect with others rhetorically in a media rich ecology. Ulmer uses analogy to define electracy, explaining that "electracy is to digital media what literacy is to print."
-
-You could make this document the easy way by posting on Google Site, an Adobe Spark, a Weebly, or a Wix, or you can do a little more work to unconceal, opening up these tools that you use every day, but might not know how they function, yet prove so necessary to how you (re)present yourself and connect with others in virtual spaces. And this last bit is an important point! If we really want to be makers, if we really want to be creative, then we need to understand what our digital tools do, how they work, and consider the implications of their use. Through this process you will also learn a little bit about computer literacy and computer science...enough to allow you to build web texts and understand file management.
-
-So let's cut this thing open – using "tmesis" as the Ancient Greeks would call it – lets "cut" and arrange, tweak, take away and augment...that's how we create! I hope you're excited to use this tool to create a document that will simultaneously help you process your journey and help orient you along the path on which you are headed in your becoming. Before we get going I would like to give a shout-out to my research buddy Shauna Chung, who helped me develop the original Ulmerian framework we will be following in this document. Are you ready to get started?-->
-
- <!--To get started, you will need to fork my repository from GitHub if you haven't already. If you want to easily publish it on GitHub, I'll give you more information at the end of this document. But for right now, fork, and then download the website to a zip file (or clone it, if you know what that means). Go ahead and put these files in a secure place (folder) where you will be able to find them and organize your other assests like images, pdfs, etcetera. You will also need a text editor like "brackets.io" or "atom.io" or "notepad-plus-plus.org." Open the index.html and style.css files in the text editor and we can get started building our own electrate experience.-->
-
-<!--BTW. You can leave these hidden HTML text fields be, or delete them. They are but road signs, absent from the larger design-->
-
-<!--First we will need to do some work in the head of the document. The head organizes important information needed to expalin to browsers how the website will work. Go ahead and change the title of this HTML document below, from "Electrate Fuego" to whatever you want it to be called. Your new text will appear in your browser tab-->
-<title>Electrate Fuego</title>
-<!--this next section of code does important work to help different browsers understand what this page should look like on the different kinds of screens.-->
+<title>Elevator Pitch Generator</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--Next is a link to the cascading style sheet or CSS file. Web designers use a cascading stylesheet CSS to add styling to a website. Designers do this by "calling" a <div class> in HTML and defining the class attributes on the style sheet. Doing so saves time and results in less code. On the style.css page you'll find attributes relating to font, text size, image size, among other details.-->
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<!--The <body> of the document houses the content that a user usually sees on a website. We'll be spending most of our time in this section.-->
 <body>
 
-<!-- We'll need to do some more work in this section, but to do so, we'll need to make some changes on your style.css file. Developers refer to this division as a "Hero Block," but we will refer to it as a "Wide Image."  Think carefully about the image you select and how it might serve a sybolic function in your life. Ulmer refers to these kinds of symbolic images as "wide images" in that they often repeat over and over in our lifetime. We will similarly repeat this image at the end of your Electrate Infuego composition to establish a motif in this web document.-->
-
-<!--The hero image is controlled on the style.css page. To replace this image, simply place a .jpg file in the same file folder (directory) as this project and name it hero.jpg. Alternatively, if you are working with a .png, you will need to open the style.css file using your text editor, and change the file type from .jpg to .png. Browsers will only work with .jpg, .jpeg, or .png imgaes. Since hero images need to stretch across the screen, typically you will want to select an image 1200px in width to allow quick load time yet avoid pixilation.-->
+<!--Replace the project title and provide a flashy subtitle. Developers refer to this division as a "Hero Block." You don't need to do anything in this html. code, but you'll need to change the background image on the style.css page. First replace the el1.jpg with a .jpg or .png in the project folder (hint: simplify the name). Then use your text editor to open your style.css sheet, find the hero image, and replace el1.jpg with the name of your new image-->
 
 <div class="hero-image">
   <div class="hero-text">
-<!--Next, change the other relevant information in this section, especially if you're not "John en Fuego" or not majoring in "electracy"-->
-      <h1>I am John en Fuego</h1>
-      <h2>And I Study Electracy</h2>
+      <h1>Elevator Pitch Generator</h1>
+      <h6>Powered by Stasis Theory</h6>
   </div>
 </div>
 
-<!--In our first exploration of discourse, we're going to think about the wider characteristics or themes of our field or future career. In academia, we do a lot of work narrowing our interest to arrive at a career or profession, often reducing our field to a level of operation or an act. Instead, I would like you to think more broadly about the "wider themes" you associate with your field or future career and its larger significance in improving our world. Yes...improving the world. Thinking back, where do you see exposure to those same "wider themes" in your own life? Those ah-ha moments, lessons, examples, tools, passions, or qualities that suggested this career path to you? Replace the content between <h2> and </h2> that begins with "Lorem ipsum."-->
+<!--in this next section you need to answer the first question of stasis, that of conjecture. What is the problem? Can it be solved?-->
 
-<div class="textblock">
-  <h2>Field or Career</h2>
 
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-</div>
-
-<!--Replace the image here. You can also control image width and height %. This is the second way we can control the size of images on our website.-->
-
-<div>
-<img src="feet1.jpg" alt="my feet in water-describe the image HERE for accessibility purposes" class="center-img"  style="max-width:50%; max-height:50%;">
-  </div>
-
-<!--in this next section you will explain a little more about your family (what does family means to you? Who are the people that influenced you on this path along which you now stand).-->
-
-<div class="textblock">
-  <h2>Family and Home</h2>
+<div class="textblock" style="text-align: left">
+  <h2>Conjecture</h2>
+    <h3>Answer the questions of conjecture: What is the problem and how will your product/service/etc. solve it? Make an assertive statement that resonates with your audience.</h3>
     </div>
 
-<!--Show us. Find those beautiful, meaningful "family" photos and pictures of your place (only you can define family). If you are concerned about issues of privacy, you can always use stock images, or get creative. Add these photos to your project folder, making sure the files end in .jpg or .png and replace the names in the grid code below. You can add more images if you wish, or subtract...you might also need to move content around to achieve balance. See what happens – sometimes you have to be playful to find the purpose of things. Since these images are smaller, you will want to resize your images to less than 600px in width. This will improve load time and thus general accesibility. Don't forget to add alt="text"-->
+<!--Add more photos to your project folder for a photo grid, making sure the files end in .jpg or .png and replace/add to the names on the grid below on this html file. You can add more images if you wish, or subtract...see what happens--you have to be playful to find out how things work.-->
 
-<!--A photo grid uses rows and column classes to create some divisions on the page that will scale with mobile devices. The style.css page provides other attributes that will adjust the image depending on the size of screens.-->
-
-
-<div class="row">
+<div class="photogrid">
+    <div class="row">
   <div class="column">
-    <img src="pgrid1.jpg" alt="describe the image HERE for accessibility purposes">
-    <img src="pgrid2.jpg" alt="describe the image HERE for accessibility purposes">
+    <img src="pgrid1.jpg" alt= "descibe image here for accessibility issues">
+    <img src="pgrid2.jpg" alt= "descibe image here for accessibility issues">
+        </div>
+<div class="column">
+    <img src="pgrid3.jpg" alt= "descibe image here for accessibility issues">
+    <img src="pgrid4.jpg" alt= "descibe image here for accessibility issues">
+        </div>
+<div class="column">
+    <img src="pgrid5.jpg" alt= "descibe image here for accessibility issues">
+    <img src="pgrid6.jpg" alt= "descibe image here for accessibility issues" >
+
   </div>
-  <div class="column">
-    <img src="pgrid3.jpg" alt="describe the image HERE for accessibility purposes">
-    <img src="pgrid4.jpg" alt="describe the image HERE for accessibility purposes">
-  </div>
-  <div class="column">
-    <img src="pgrid5.jpg" alt="describe the image HERE for accessibility purposes">
-    <img src="pgrid6.jpg" alt="describe the image HERE for accessibility purposes">
-  </div>
+ </div>
 </div>
 
-<!--Time to write. Flesh it out! Define family, qualify it, explicate it telling us why these people are important, and how they contributed to how you got here and where you are going. What about "home." What  does that mean to you? In what ways is it significant in determining where your are going? Replace the content between <h2> and </h2> that says "Lorem ipsum."-->
+<!--You can't break this thing! Right? Control Z. Comtrol Z. Control Z...-->
 
-<div class="textblock">
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+<div class="textblock" style="text-align: left">
+    <h2>Definition</h2>
+
+    <h3>Let's address some of questions of definition and better qualify your conjecture. Flesh it out. Get specific.</h3>
 </div>
 
 
+    <!--Replace the image here. You can also control image width and height %.-->
 
-<!--Now we are moving into the kinds of media that contributes to your everyday discourse. This might sound weird, but Ulmer argues that media has actually contributed a great deal to who you are as a person, how you language yourself, and even how you move through the world and interact with others. So, let's take some time to explore this discourse area. You have the opportunity to add video content or other significant media content. You might also add images to this section (see the bottom of this sheet for directions on how to add elements) perhaps adding a photo grid like the one you did for the "Family" section. Experiment. You can't break this thing, right? Control Z. Control Z. Control Z... -->
-
-<div class="textblock">
-  <h2>Entertainment</h2>
-
-<!--find a YouTube video that has some significance in your life. Click "share," and copy and paste the embed link and paste it below-->
-
-  <div class="video-container">
-    <<iframe width="560" height="315" src="https://www.youtube.com/embed/PhPLTpqG0pU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
-</div>
-    <p>Add a caption.</p>
-
-
-<!--Time to process. How do you use media? What role do certain kinds of media play in your life? How does media serve a social function? In what way might you be "recreating" or "remaking" media in your everyday life?
-
-FUN FACT: "Lorem ipsum", "Lorem ipsum" was hacked out of Cicero's "De finibus bonorum et malorum," developers made it non-sensical. So while you will probably never write as well as Cicero, you can always improve upon "Lorem ipsum." -->
-
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-</div>
-
-<!--Between these divisions, you may want to add a new div element like an image (see the bottom of this html page for instructions) -->
-
-<!--We will use this next section to process your community(-ies)-->
-
-<div class="textblock">
-  <h2>Community</h2>
-
-<!--So what exactly is your community: is it actual? virtual? Where do find your ground, or at least, where do you drop anchor, you drifter, you? While we often think of communities as neighborhoods and clubs and a group of colleagues or friends, you might find community across the frontiers of the dead, and perhaps even with those who have never lived. I'll let you explain. -->
-<div>
-<img src="feet2.jpg" alt="my feet in water-describe the image HERE for accessibility purposes" class="center-img" style="max-width:100%;max-height:100%;">
-</div>
-
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-  </div>
+ <img src="el2.jpg" alt="descibe image here for accessibility issues" class="center-img" style="width:50%;height:50%;">
 
 
 
-<!-- In our final discourse section, we will process the role schooling has played in our lives. -->
 
-    <!--To change the image for this wide screen paralax scroll, you will need change the file name in your style.css to match an image in your project folder. Look for ".paralax1" on your style.css sheet-->
+
+
+<div class="textblock" style="text-align: left">
+  <h2>Quality</h2>
+     <h3>We are at the question of quality: why is solving this problem important? Who are the stakeholders? What happens if we don't do anything? What are the costs of solving/not solving the problem/issue?</h3>
+    </div>
+
+
+    <div>
+
+ <img src="el3.jpg" alt="descibe image here for accessibility issues" class="center-img" alt="my feet in water" style="width:100%;height:100%;">
+    </div>
+
+
+
+<div class="textblock" style="text-align: left">
+  <h2>Policy</h2>
+
+    <h3>Now we need to address the question of policy: moving forward, what's your plan? Why are you and your solution right for the job? What can you/your product or service do specifically for the audience?</h3>
+    </div>
+
 
 <div class="parallax"></div>
 
-<!--Like it or not, your schooling, formal and informal, for better or for worse, has been another factor that has brought you here and prepared you for this moment. Let's think through these systems, expectations, and outcomes. And let's also think a little about futurity... where is this learning, formal and informal – this unconcealing – taking you? -->
-<div class="textblock">
-  <h2>School</h2>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-  </div>
-
-<!--The final step in our process will be to ensure that a smaller version of our "hero image," what Ulmer would refer to as our "wide image," repeats at the bottom of our document to better reinforce this motif.  -->
-
-  <div id="logo">
-            <img src="feet1.jpg" alt="my feet in water" style="max-width:25%;max-height:25%;">
-            <p><b>generated by <a href="https://pitt-fuego.github.io/Pitt-Fuego-Coding-Tools/">Pitt Fuego</a></b></p>
-            <p><em>Why make a spark when you can light a fire?</em></p>
-  </div>
 
 
+<div id="logo">
+    <img src="hero.jpg" alt="image of elevator doors" style="max-width:25%;max-height:25%;">
+        <p><b>generated by <a href="https://pitt-fuego.github.io/Pitt-Fuego-Coding-Tools/">Pitt Fuego</a></b></p>
+          <p><em>Why make a spark when you can light a fire?</em></p>
+</div>
+
+
+<!--Add footer here-->
 
   </body>
      </html>
-
-
 
 
 
@@ -159,7 +127,7 @@ FUN FACT: "Lorem ipsum", "Lorem ipsum" was hacked out of Cicero's "De finibus bo
 
      ***Add Text Block***
 
-     (Format textblock using inline styling: text-align: left, center, justify, right; Format text: Italics: <em>italics</em>; Bold: <b>bold</b>; Link Website: <a href="link">LinkName</a>; Link Asset: <a href=filename.pdf>FileName</a>; Line Breaks: <br></br>)
+    (Format textblock using inline styling: text-align: left, center, justify, right; Format text: Italics: <em>italics</em>; Bold: <b>bold</b>; Link Website: <a href="link">LinkName</a>; Link Asset: <a href=filename.pdf>FileName</a>; Line Breaks: <br></br>; Tip for composing longer content: use <h3> and <p> instead of <h2> and <h3>)
 
      <div class="textblock" style="text-align: left">
          <h2>Header</h2>
@@ -219,8 +187,8 @@ FUN FACT: "Lorem ipsum", "Lorem ipsum" was hacked out of Cicero's "De finibus bo
      <div class="video">
       <div class="video-container">
         <<iframe width="560" height="315" src="https://www.youtube.com/embed/PhPLTpqG0pU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
-     </div>
-       <p>Add a caption.</p>
+      </div>
+        <p>Add a caption.</p>
      </div>
 
 
