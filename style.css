@@ -1,13 +1,15 @@
 body, html {
+	/* this controls universal elements on your site. Everything in here can be overridden by styles below. */
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Helvetica, Arial, san-serif;
+  background-color: white;
 }
 
 .hero-image {
     /* - HERO -
     This code controls your "hero image." You will need to change hero.jpg to match your asset */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cats.png");
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -18,7 +20,7 @@ body, html {
 
 /* Places text in the middle of the image */
 .hero-text {
-    text-align: center;
+	    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,12 +41,39 @@ body, html {
   }
 
 .textblock {
+	/* This sets up the spacing inside of the textblock divs. I'd encourage y'all to play around with this padding to see what happens. You can really change the feel of your site by rearranging elements via padding and other methods. See https://www.w3schools.com/css/css_padding.asp for info on padding and https://www.w3schools.com/css/css_positioning.asp for div position*/  
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 100px;
     padding-right: 100px;
   }
 
+.textblock p {
+    /* This section lets you adjust the text style for your paragraph element text in the textblock div. */
+	color: #000000;
+	font-size: 1em;
+	line-height: 1.2;
+  }
+  
+
+
+  .textblock a:link 
+  /* This section lets you adjust the text style for your link elements in the textblock div.  See https://www.w3schools.com/html/html_links.asp for more details. With links styles can be applied based on several factors.*/{
+  text-decoration: none;
+  color: blue;
+}
+
+  .textblock a:visited {
+  text-decoration: none;
+}
+
+  .textblock a:hover {
+  text-decoration: underline;
+}
+
+   .textblock a:active {
+  text-decoration: underline;
+}
 
 .blockquote {
     background-color: #;
@@ -141,7 +170,7 @@ This code controls that cool parallax image and scrolling effect. Change the ima
 
 
 .parallax {
-    background-image: url("parallax.jpg");
+    background-image: url("cats.png");
 
     /* Set a specific height */
     height: 500px;
