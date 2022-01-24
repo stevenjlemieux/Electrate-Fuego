@@ -69,7 +69,13 @@ Setting up Atom for Windows and CodePad for Chromebooks
 
 
 
+# With Thanks
 
+So much thanks to Stephen Quigley for all his work on Pitt/Electrate Feugo.
+
+You'll find a modified version of his tutorial here. 
+
+Steven LeMieux, University of Pittsburgh 2022 
 
 
 
