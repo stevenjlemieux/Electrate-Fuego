@@ -2,7 +2,7 @@ body, html {
 	/* this controls universal elements on your site. Everything in here can be overridden by styles below. */
   height: 100%;
   margin: 0;
-  font-family: Verdana, Helvetica, Arial, san-serif;
+  font-family: Verdana, Helvetica, Arial, san-serif; /* definitely check out https://www.w3schools.com/cssref/pr_font_font-family.asp for more info on font families */
   background-color: white;
 }
 
@@ -18,7 +18,7 @@ body, html {
     position: relative;
 }
 
-/* Places text in the middle of the image */
+/* This section does double duty. It makes broad changes to all the text in the hero block, so it impactds h1 and h2 text. Since there is only h1 and h2 text in the hero block. There's not a breakout style section for h1 text.  */
 .hero-text {
 	    text-align: center;
     position: absolute;
@@ -30,27 +30,33 @@ body, html {
 }
 
 .hero-text h2 {
-    /* This section adds the text stylings for your hero block */
+    /* This section adds the text stylings for the h2 text in your hero block */
     display: block;
     font-size: 0.67em;
     margin-block-start: 2.33em;
     margin-block-end: 2.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-weight: bold;
+    
   }
 
 .textblock {
-	/* This sets up the spacing inside of the textblock divs. I'd encourage y'all to play around with this padding to see what happens. You can really change the feel of your site by rearranging elements via padding and other methods. See https://www.w3schools.com/css/css_padding.asp for info on padding and https://www.w3schools.com/css/css_positioning.asp for div position*/  
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+	/* You can use this to control broad elements of the .textblock <div>.*/
+	text-align: left;
+	color: #000000;
+  }
+  
+  .textblock h2 {
+	/* This section lets you adject the h2 heading style for text in the .textblock div/ */
+	text-align: center;	
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.5;
   }
 
 .textblock p {
     /* This section lets you adjust the text style for your paragraph element text in the textblock div. */
-	color: #000000;
+	
 	font-size: 1em;
 	line-height: 1.2;
   }
@@ -74,6 +80,50 @@ body, html {
    .textblock a:active {
   text-decoration: underline;
 }
+
+.backgroundcolor1 {
+	/*This sets a background color that can be plugged into a div or other element. The color is specified in the hex format with an aditional alpha value to adjust opacity*/
+	background-color: #58FAA126;
+}
+.video {
+    text-align: center;
+}
+
+.video-container {
+  	position:relative;
+  	padding-bottom:56.25%;
+  	padding-top:30px;
+  	height:0;
+  	overflow:hidden;
+    text-align: center;
+  }
+
+.video-container iframe, .video-container object, .video-container embed {
+  	position:absolute;
+  	top:0;
+  	left:0;
+  	width:100%;
+  	height:100%;
+  }
+
+
+/* Preset Image Controls
+
+This section of CSS helps organize images to position and center the image to scale nicely on all screens */
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgageblock {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
 
 .blockquote {
     background-color: #;
@@ -123,65 +173,22 @@ body, html {
 }
 
 /* Learn other list conventions: https://www.w3schools.com/cssref/pr_list-style-type.asp */
-
-.video {
-    text-align: center;
-}
-
-.video-container {
-  	position:relative;
-  	padding-bottom:56.25%;
-  	padding-top:30px;
-  	height:0;
-  	overflow:hidden;
-    text-align: center;
-  }
-
-.video-container iframe, .video-container object, .video-container embed {
-  	position:absolute;
-  	top:0;
-  	left:0;
-  	width:100%;
-  	height:100%;
-  }
-
-
-/* Preset Image Controls
-
-This section of CSS helps organize images to position and center the image to scale nicely on all screens */
-
-.center-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.imgageblock {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 100px;
-      padding-bottom: 100px;
-  }
-
-
 /*  - PARALLAX -
-This code controls that cool parallax image and scrolling effect. Change the image "fuego.jpg" below to match your asset.*/
+This code controls that cool parallax image and scrolling effect. Change the image "cats.png" below to match your asset.*/
 
 
 .parallax {
     background-image: url("cats.png");
 
-    /* Set a specific height */
-    height: 500px;
+    /* Set a specific height. If you do want textual content in your parallax section you'll need to make sure that it properly fits the size you've alotted. You can opt not to set a height and just rely on it to cover (see background size below). */
+    height: 600px;
 
     /* control the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
+
 
 }
 
@@ -190,7 +197,7 @@ This code controls that cool parallax image and scrolling effect. Change the ima
 @media screen and (max-width: 768px) {
 	.parallax {
 		background-attachment: inherit;
-    height: 100px;
+    
 	}
 }
 
@@ -237,23 +244,25 @@ The following CSS is responsible for your photo grid .row, .column, .column img 
 this CSS element centers text elements*/
 
 
-/* This CSS section controls the paragraph, video blocks*/
+/* This CSS section controls the paragraph, video blocks. These are really important sections! They change the bulk of how your text is arranged on the screen. Try playing around with these elements. */
 @media screen and (min-width: 800px) {
     .textblock, .video {
+		/* This section adjusts non-mobile screens*/
         margin: auto;
         width: 50%;
-        padding: 100px;
+        padding: 50px;
         font-size: 125%;
     }
 }
 
 @media screen and (max-width: 800px) {
     .textblock, .video {
+		/* This section adjusts mobile screens*/
         margin: auto;
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 100px;
-        padding-bottom: : 1000px;
+        padding-top: 50px;
+        padding-bottom: : 50px;
     }
 }
 
