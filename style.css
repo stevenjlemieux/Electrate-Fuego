@@ -8,7 +8,7 @@ body, html {
 
 .hero-image {
     /* - HERO -
-    This code controls your "hero image." You will need to change hero.jpg to match your asset */
+    This code controls your "hero image." You will need to change cats.png to match your asset */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cats.png");
     height: 100%;
     background-attachment: fixed;
@@ -18,7 +18,7 @@ body, html {
     position: relative;
 }
 
-/* This section does double duty. It makes broad changes to all the text in the hero block, so it impactds h1 and h2 text. Since there is only h1 and h2 text in the hero block. There's not a breakout style section for h1 text.  */
+/* This section does double duty. It makes broad changes to all the text in the hero block, so it impacts h1 and h2 text. Since there is only h1 and h2 text in the hero block. There's not a breakout style section for h1 text.  */
 .hero-text {
 	    text-align: center;
     position: absolute;
@@ -244,7 +244,7 @@ The following CSS is responsible for your photo grid .row, .column, .column img 
 this CSS element centers text elements*/
 
 
-/* This CSS section controls the paragraph, video blocks. These are really important sections! They change the bulk of how your text is arranged on the screen. Try playing around with these elements. */
+/* This CSS section controls the paragraph, video blocks. These are really important sections! They change the bulk of how your text is arranged on the screen. Try playing around with these elements. Look up the invidivual elements on W3 schools*/
 @media screen and (min-width: 800px) {
     .textblock, .video {
 		/* This section adjusts non-mobile screens*/
